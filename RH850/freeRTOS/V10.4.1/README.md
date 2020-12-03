@@ -20,7 +20,7 @@
 - [Youtube Video Tutorial : How to port freeRTOS to Renesas RH850](https://github.com/dinguluer/Renesas)
 
 # How to port freeRTOS to Renesas RH850 : Releases
-* First release – release 1.0.0 (Jyot) : Date - 12-03-2020
+* First release – release (1.0.0) : Date - 12-03-2020
 
 # Licensing
 This porting is released under commercial and [GNU GPL v.2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) open source licenses.
