@@ -1,11 +1,8 @@
-# <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o6p4tZT_ORfBAOCJ0DD7CPSyOo3ZToXUVQ&usqp=CAU" width="64" height="64"> Porting freeRTOS on Renesas RH850
+# This sample project is porting for freeRTOS on RH850.
 
-![](https://img.shields.io/badge/license-GPL_2-green.svg "License")
-
-This sample project is porting for freeRTOS on RH850.
-
-* RH850 : This folder contains the code
-* Smart_configurator : This folder contains the smart configurator project for generating drivers for RH850/F1KM-S1, R7F701690, 64 pins. same drivers are used in folder RH850.
+* CS+ with asm file : This folder contains the porting using CCRH compiler with portable assembly routines, in assembly language PORT_ASM.asm
+* CS+ with inline asm : This folder contains the porting using CCRH compiler with portable assembly routines, in inline assembly port.c
+* GHS : This folder contains the porting using GHS compiler.
 
 # Development enviroment used for porting freeRTOS on RH850.
 * Author  : Dinesh Guleria
