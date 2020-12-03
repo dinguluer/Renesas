@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<smc>
+<general version="2.0.0.0">
+<configuration active="true" id="com.renesas.smc.toolchain.ccrh.configuration.release">
+<property id="com.renesas.smc.service.project.buildArtefactType" values="com.renesas.smc.service.project.buildArtefactType.exe"/>
+<property id="com.renesas.smc.service.project.buildType" values="com.renesas.smc.service.project.buildType.release"/>
+<toolchain id="com.renesas.smc.toolchain.ccrh.toolchain.ccrh">
+<option id="com.renesas.smc.toolchain.option.buildArtefactType" key="com.renesas.smc.toolchain.option.buildArtefactType.exe"/>
+<option id="com.renesas.smc.toolchain.option.rtos" key="com.renesas.smc.toolchain.option.rtos.none"/>
+</toolchain>
+</configuration>
+<platform id="R7F701690"/>
+<option id="board" value="Custom User Board"/>
+</general>
+<tool id="Clock">
+<option enable="true" id="rlin_divider" selection="rlin_divider_1">
+<Item enable="true" id="rlin_divider_8" type="SItem"/>
+<Item enable="true" id="rlin_divider_1" type="SItem"/>
+<Item enable="true" id="rlin_divider_4" type="SItem"/>
+</option>
+<option enable="true" id="wdta_divider_count" selection="wdta_divider_128">
+<Item enable="true" id="wdta_divider_1" type="SItem"/>
+<Item enable="true" id="wdta_divider_128" type="SItem"/>
+</option>
+<option enable="true" id="iicoutput" selection="ppllckswitcher_iicoutput">
+<Item enable="true" id="disable_iicoutput" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_iicoutput" type="SItem"/>
+</option>
+<option enable="true" id="hs_stop_mode" selection="hs_out_stop">
+<Item enable="true" id="hs_out_continues" type="SItem"/>
+<Item enable="true" id="hs_out_stop" type="SItem"/>
+</option>
+<option enable="false" id="rtca_stop_mode" selection="rtca_out_stop">
+<Item enable="true" id="rtca_out_stop" type="SItem"/>
+<Item enable="true" id="rtca_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="ican_divider" selection="ican_divider_2">
+<Item enable="true" id="ican_divider_disable" type="SItem"/>
+<Item enable="true" id="ican_divider_2" type="SItem"/>
+<Item enable="true" id="ican_divider_1" type="SItem"/>
+</option>
+<option enable="true" id="cpllckswitcher" selection="pll1_cpllckswitcher">
+<Item enable="true" id="main_cpllckswitcher" type="SItem"/>
+<Item enable="true" id="pll1_cpllckswitcher" type="SItem"/>
+<Item enable="true" id="exclkswitcher_cpllckswitcher" type="SItem"/>
+</option>
+<option enable="true" id="rlinswitcher" selection="ppllckswitcher_rlinswitcher">
+<Item enable="true" id="ppllckswitcher_rlinswitcher" type="SItem"/>
+<Item enable="true" id="disable_rlinswitcher" type="SItem"/>
+<Item enable="true" id="hs_rlinswitcher" type="SItem"/>
+<Item enable="true" id="main_rlinswitcher" type="SItem"/>
+</option>
+<option enable="true" id="main" selection="main_start">
+<Item enable="true" id="main_start" type="SItem"/>
+</option>
+<option enable="false" id="hs" selection="hs_disable">
+<Item enable="true" id="hs_disable" type="SItem"/>
+</option>
+<option enable="true" id="tau_divider_count" selection="tau_divider_1">
+<Item enable="true" id="tau_divider_8" type="SItem"/>
+<Item enable="true" id="tau_divider_2" type="SItem"/>
+<Item enable="true" id="tau_divider_1" type="SItem"/>
+<Item enable="true" id="tau_divider_4" type="SItem"/>
+</option>
+<option enable="false" id="fout_divider_value" selection="fout_divider_value">
+<Item enable="true" id="fout_divider_value" inputvalue="1" type="DItem" value="00000001"/>
+</option>
+<option enable="true" id="rtca_divider" selection="rtca_divider_disable">
+<Item enable="true" id="rtca_divider_8" type="SItem"/>
+<Item enable="true" id="rtca_divider_disable" type="SItem"/>
+<Item enable="true" id="rtca_divider_4" type="SItem"/>
+<Item enable="true" id="rtca_divider_1" type="SItem"/>
+<Item enable="true" id="rtca_divider_2" type="SItem"/>
+</option>
+<option enable="true" id="exclkswitcher" selection="hs_exclkswitcher">
+<Item enable="true" id="hs_exclkswitcher" type="SItem"/>
+<Item enable="true" id="ls_exclkswitcher" type="SItem"/>
+</option>
+<option enable="true" id="cllclk_divider" selection="cllclk_divider_4">
+<Item enable="true" id="cllclk_divider_6" type="SItem"/>
+<Item enable="true" id="cllclk_divider_5" type="SItem"/>
+<Item enable="true" id="cllclk_divider_4" type="SItem"/>
+</option>
+<option enable="true" id="per2output" selection="ppllckswitcher_per2output">
+<Item enable="true" id="ppllckswitcher_per2output" type="SItem"/>
+<Item enable="true" id="per2output_disable" type="SItem"/>
+</option>
+<option enable="true" id="adca0_stop_mode" selection="adca0_out_stop">
+<Item enable="true" id="adca0_out_continues" type="SItem"/>
+<Item enable="true" id="adca0_out_stop" type="SItem"/>
+</option>
+<option enable="true" id="main_frequency" selection="main_frequency_8">
+<Item enable="true" id="main_frequency_20" type="SItem"/>
+<Item enable="true" id="main_frequency_8" type="SItem"/>
+<Item enable="true" id="main_frequency_24" type="SItem"/>
+<Item enable="true" id="main_frequency_16" type="SItem"/>
+</option>
+<option enable="true" id="adca0_divider_count" selection="adca0_divider_1">
+<Item enable="true" id="adca0_divider_2" type="SItem"/>
+<Item enable="true" id="adca0_divider_1" type="SItem"/>
+</option>
+<option enable="true" id="main_out_model" selection="main_out_stop">
+<Item enable="true" id="main_out_stop" type="SItem"/>
+<Item enable="true" id="main_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="rlin_out" selection="rlin_out_stop">
+<Item enable="true" id="rlin_out_stop" type="SItem"/>
+<Item enable="true" id="rlin_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="main_status_time" selection="main_status_time">
+<Item enable="true" id="main_status_time" inputvalue="2.2" type="DItem" value="000044C0"/>
+</option>
+<option enable="false" id="foutswitcher" selection="disable_foutswitcher">
+<Item enable="true" id="ls_foutswitcher" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_foutswitcher" type="SItem"/>
+<Item enable="true" id="disable_foutswitcher" type="SItem"/>
+<Item enable="true" id="main_foutswitcher" type="SItem"/>
+<Item enable="true" id="hs_foutswitcher" type="SItem"/>
+</option>
+<option enable="true" id="rscaniso_out" selection="rscaniso_out_stop">
+<Item enable="true" id="rscaniso_out_continues" type="SItem"/>
+<Item enable="true" id="rscaniso_out_stop" type="SItem"/>
+</option>
+<option enable="true" id="pll1sourceswitcher" selection="main_pll1sourceswitcher">
+<Item enable="true" id="hs_pll1sourceswitcher" type="SItem"/>
+<Item enable="true" id="main_pll1sourceswitcher" type="SItem"/>
+</option>
+<option enable="true" id="wdta_stop_mode" selection="wdta_out_stop">
+<Item enable="true" id="wdta_out_stop" type="SItem"/>
+<Item enable="true" id="wdta_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="tauswitcher" selection="ppllckswitcher_tauswitcher">
+<Item enable="true" id="main_tauswitcher" type="SItem"/>
+<Item enable="true" id="disable_tauswitcher" type="SItem"/>
+<Item enable="true" id="hs_tauswitcher" type="SItem"/>
+<Item enable="true" id="ls_tauswitcher" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_tauswitcher" type="SItem"/>
+</option>
+<option enable="true" id="rscanisoswitcher" selection="main_rscanisoswitcher">
+<Item enable="true" id="disable_rscanisoswitcher" type="SItem"/>
+<Item enable="true" id="main_rscanisoswitcher" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_rscanisoswitcher" type="SItem"/>
+</option>
+<option enable="true" id="osc_source" selection="osc_osc_source">
+<Item enable="true" id="osc_osc_source" type="SItem"/>
+<Item enable="true" id="osc_exclk_source" type="SItem"/>
+</option>
+<option enable="true" id="csiswitcher" selection="ppllckswitcher_csiswitcher">
+<Item enable="true" id="disable_csiswitcher" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_csiswitcher" type="SItem"/>
+<Item enable="true" id="hs_csiswitcher" type="SItem"/>
+<Item enable="true" id="main_csiswitcher" type="SItem"/>
+</option>
+<option enable="true" id="tau_stop_mode" selection="tau_out_stop">
+<Item enable="true" id="tau_out_stop" type="SItem"/>
+<Item enable="true" id="tau_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="ican_out" selection="ican_out_stop">
+<Item enable="true" id="ican_out_stop" type="SItem"/>
+<Item enable="true" id="ican_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="pll1" selection="pll1_start">
+<Item enable="true" id="pll1_start" type="SItem"/>
+</option>
+<option enable="false" id="fout_out" selection="fout_out_stop">
+<Item enable="true" id="fout_out_stop" type="SItem"/>
+<Item enable="true" id="fout_out_continues" type="SItem"/>
+</option>
+<option enable="true" id="cpu_divider" selection="cpu_divider_1">
+<Item enable="true" id="cpu_divider_8" type="SItem"/>
+<Item enable="true" id="cpu_divider_4" type="SItem"/>
+<Item enable="true" id="cpu_divider_1" type="SItem"/>
+<Item enable="true" id="cpu_divider_2" type="SItem"/>
+</option>
+<option enable="true" id="per1output" selection="ppllckswitcher_per1output">
+<Item enable="true" id="ppllckswitcher_per1output" type="SItem"/>
+<Item enable="true" id="per1output_disable" type="SItem"/>
+</option>
+<option enable="true" id="ppllckswitcher" selection="pll1_ppllckswitcher">
+<Item enable="true" id="main_ppllckswitcher" type="SItem"/>
+<Item enable="true" id="exclkswitcher_ppllckswitcher" type="SItem"/>
+<Item enable="true" id="pll1_ppllckswitcher" type="SItem"/>
+</option>
+<option enable="true" id="rtcaswitcher" selection="disable_rtcaswitcher">
+<Item enable="true" id="ls_rtcaswitcher" type="SItem"/>
+<Item enable="true" id="main_rtcaswitcher" type="SItem"/>
+<Item enable="true" id="disable_rtcaswitcher" type="SItem"/>
+</option>
+<option enable="true" id="adca0switcher" selection="hs_adca0switcher">
+<Item enable="true" id="hs_adca0switcher" type="SItem"/>
+<Item enable="true" id="ppllckswitcher_adca0switcher" type="SItem"/>
+<Item enable="true" id="disable_adca0switcher" type="SItem"/>
+<Item enable="true" id="main_adca0switcher" type="SItem"/>
+</option>
+</tool>
+<tool id="Pins" version="1.0.1.0">
+<pinItem allocation="25" comments="" direction="None" id="X1" locked="false" status="0"/>
+<pinItem allocation="24" comments="" direction="None" id="X2" locked="false" status="0"/>
+<pinItem allocation="47" comments="" direction="None" id="P9_2" locked="false" status="0"/>
+<pinItem allocation="46" comments="" direction="None" id="P9_1" locked="false" status="0"/>
+<pinItem allocation="45" comments="" direction="None" id="P9_0" locked="false" status="0"/>
+<pinItem allocation="13" comments="" direction="None" id="TAUJ0O0" locked="false" status="0"/>
+<pinItem allocation="53$2" comments="" direction="None" id="CSIG0SI" locked="false" status="0"/>
+<pinItem allocation="51$2" comments="" direction="None" id="CSIG0SO" locked="false" status="0"/>
+<pinItem allocation="52$2" comments="" direction="None" id="CSIG0SC" locked="false" status="0"/>
+</tool>
+<tool id="Interrupt">
+<Item id="TAUD0_INTTAUD0I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I4" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I6" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I8" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I10" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I12" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I14" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAPA0_INTTAPA0IPEK0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAPA0_INTTAPA0IVLY0" oSManagementInterrupt="false" priority="15"/>
+<Item id="ADCA0_INTADCA0I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="ADCA0_INTADCA0I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="ADCA0_INTADCA0I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTDCUTDI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCANGERR0" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCANGRECC0" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN0ERR" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN0REC" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN0TRX" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIG0_INTCSIG0IC" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIG0_INTCSIG0IR" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIH0_INTCSIH0IC" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIH0_INTCSIH0IR" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIH0_INTCSIH0IRE" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIH0_INTCSIH0IJC" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN30_INTRLIN30" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN30_INTRLIN30UR0" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN30_INTRLIN30UR1" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN30_INTRLIN30UR2" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP0" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP1" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP2" oSManagementInterrupt="false" priority="15"/>
+<Item id="WDTA0_INTWDTA0" oSManagementInterrupt="false" priority="15"/>
+<Item id="WDTA1_INTWDTA1" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP3" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP4" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP5" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP10" oSManagementInterrupt="false" priority="15"/>
+<Item id="Port_INTP11" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I3" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I5" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I7" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I9" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I11" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I13" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUD0_INTTAUD0I15" oSManagementInterrupt="false" priority="15"/>
+<Item id="ADCA0_INTADCA0ERR" oSManagementInterrupt="false" priority="15"/>
+<Item id="CSIG0_INTCSIG0IRE" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN240_INTRLIN20" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN240_INTRLIN21" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA0" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA1" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA2" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA3" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA4" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA5" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA6" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC0_INTDMA7" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA8" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA9" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA10" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA11" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA12" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA13" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA14" oSManagementInterrupt="false" priority="15"/>
+<Item id="DMAC1_INTDMA15" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC0_INTRIIC0TI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC0_INTRIIC0EE" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC0_INTRIIC0RI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC0_INTRIIC0TEI" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ0_INTTAUJ0I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ0_INTTAUJ0I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ0_INTTAUJ0I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ0_INTTAUJ0I3" oSManagementInterrupt="false" priority="15"/>
+<Item id="OSTM0_INTOSTM0" oSManagementInterrupt="false" priority="0"/>
+<Item id="ENCA0_INTENCA0IOV" oSManagementInterrupt="false" priority="15"/>
+<Item id="ENCA0_INTENCA0IUD" oSManagementInterrupt="false" priority="15"/>
+<Item id="ENCA0_INTENCA0I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="ENCA0_INTENCA0I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="ENCA0_INTENCA0IEC" oSManagementInterrupt="false" priority="15"/>
+<Item id="KR0_INTKR0" oSManagementInterrupt="false" priority="15"/>
+<Item id="PWSA0_INTQFULL" oSManagementInterrupt="false" priority="15"/>
+<Item id="PWGA0-31_INTPWGAG00" oSManagementInterrupt="false" priority="15"/>
+<Item id="FACI_INTFLERR" oSManagementInterrupt="false" priority="15"/>
+<Item id="FACI_INTFLENDNM" oSManagementInterrupt="false" priority="15"/>
+<Item id="LPS0_INTCWEND" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN1ERR" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN1REC" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN1TRX" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN31_INTRLIN31" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN31_INTRLIN31UR0" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN31_INTRLIN31UR1" oSManagementInterrupt="false" priority="15"/>
+<Item id="RLIN31_INTRLIN31UR2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ1_INTTAUJ1I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ1_INTTAUJ1I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ1_INTTAUJ1I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ1_INTTAUJ1I3" oSManagementInterrupt="false" priority="15"/>
+<Item id="RTCA0_INTRTCA01S" oSManagementInterrupt="false" priority="15"/>
+<Item id="RTCA0_INTRTCA0AL" oSManagementInterrupt="false" priority="15"/>
+<Item id="RTCA0_INTRTCA0R" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN2ERR" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN2REC" oSManagementInterrupt="false" priority="15"/>
+<Item id="RCFDC0_INTRCAN2TRX" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC1_INTRIIC1TI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC1_INTRIIC1EE" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC1_INTRIIC1RI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RIIC1_INTRIIC1TEI" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ2_INTTAUJ2I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ2_INTTAUJ2I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ2_INTTAUJ2I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ2_INTTAUJ2I3" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ3_INTTAUJ3I0" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ3_INTTAUJ3I1" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ3_INTTAUJ3I2" oSManagementInterrupt="false" priority="15"/>
+<Item id="TAUJ3_INTTAUJ3I3" oSManagementInterrupt="false" priority="15"/>
+<Item id="RSENT0_INTSENT0SI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RSENT0_INTSENT0RI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RSENT1_INTSENT1SI" oSManagementInterrupt="false" priority="15"/>
+<Item id="RSENT1_INTSENT1RI" oSManagementInterrupt="false" priority="15"/>
+<Item id="LPS0_INTDPE" oSManagementInterrupt="false" priority="15"/>
+<Item id="LPS0_INTAPE" oSManagementInterrupt="false" priority="15"/>
+</tool>
+<tool id="SWComponent" version="1.0.0.0">
+<configuration id="189da88b-5c3a-4f4e-81b7-f7eddc999a86" inuse="true" name="Config_OSTM0">
+<allocatable id="OSTM0">
+<osocket id="intOSTM" value="true"/>
+<isocket id="countClock" selection="Clock.cpuoutputl" value="6.0E7"/>
+<option enabled="true" id="OSTMModeSetting" selection="intervalTimerMode">
+<item id="intervalTimerMode" input="" vlaue="0"/>
+<item id="freeRunningMode" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="comparingValue" selection="comparingValueText">
+<item id="comparingValueText" input="1" vlaue="59999"/>
+</option>
+<option enabled="true" id="comparingValueUnit" selection="ms">
+<item id="ms" input="" vlaue="0"/>
+<item id="us" input="" vlaue="0"/>
+<item id="ns" input="" vlaue="0"/>
+<item id="count" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="interruptEnable" selection="enable">
+<item id="enable" input="" vlaue="0"/>
+<item id="disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="enableInterruptWhenCounting" selection="disable">
+<item id="enable" input="" vlaue="0"/>
+<item id="disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="priority" selection="Level0">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+</allocatable>
+<component description="The OS Timer (OSTM) is function that operates a timer in the specified count direction (up/down) and generates an arbitrary interrupt." detailDescription="" display="OS Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.ostm" version="1.1.0"/>
+<allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="OSTM0" display="OSTM0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.ostm.f1km.ostm0" type="">
+<context/>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+<configuration id="cdc11765-96c1-44c5-826e-4a00375f416c" inuse="true" name="Config_PORT">
+<allocatable id="Port">
+<allocatable id="APORT0_Chan"/>
+<allocatable id="APORT0_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="JPORT0_Chan"/>
+<allocatable id="JPORT0_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT0_Chan"/>
+<allocatable id="PORT0_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT8_Chan"/>
+<allocatable id="PORT8_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT9_Chan">
+<allocatable id="PORTx0_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="bidirectional" selection="bidirectionalUnuse">
+<item id="bidirectionalUnuse" input="" vlaue="0"/>
+<item id="bidirectionalUse" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Opendrain" selection="opendrainUnuse">
+<item id="opendrainUnuse" input="" vlaue="0"/>
+<item id="opendrainUse" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="resistorstatus" selection="resistorUnuse">
+<item id="resistorUnuse" input="" vlaue="0"/>
+<item id="resistorPullup" input="" vlaue="0"/>
+<item id="resistorPulldown" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="inputbuffer" selection="shmt4Item">
+<item id="shmt1Item" input="" vlaue="0"/>
+<item id="shmt4Item" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx1_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="bidirectional" selection="bidirectionalUnuse">
+<item id="bidirectionalUnuse" input="" vlaue="0"/>
+<item id="bidirectionalUse" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Opendrain" selection="opendrainUnuse">
+<item id="opendrainUnuse" input="" vlaue="0"/>
+<item id="opendrainUse" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="resistorstatus" selection="resistorUnuse">
+<item id="resistorUnuse" input="" vlaue="0"/>
+<item id="resistorPullup" input="" vlaue="0"/>
+<item id="resistorPulldown" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="inputbuffer" selection="shmt4Item">
+<item id="shmt1Item" input="" vlaue="0"/>
+<item id="shmt4Item" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx2_Item">
+<option enabled="true" id="UseStatus" selection="Out">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="bidirectional" selection="bidirectionalUnuse">
+<item id="bidirectionalUnuse" input="" vlaue="0"/>
+<item id="bidirectionalUse" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Output1" selection="Output1Use">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Opendrain" selection="opendrainUnuse">
+<item id="opendrainUnuse" input="" vlaue="0"/>
+<item id="opendrainUse" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="resistorstatus" selection="resistorUnuse">
+<item id="resistorUnuse" input="" vlaue="0"/>
+<item id="resistorPullup" input="" vlaue="0"/>
+<item id="resistorPulldown" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="inputbuffer" selection="shmt4Item">
+<item id="shmt1Item" input="" vlaue="0"/>
+<item id="shmt4Item" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORTx3_Item">
+<option enabled="true" id="UseStatus" selection="Unuse">
+<item id="Unuse" input="" vlaue="0"/>
+<item id="In" input="" vlaue="0"/>
+<item id="Out" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="bidirectional" selection="bidirectionalUnuse">
+<item id="bidirectionalUnuse" input="" vlaue="0"/>
+<item id="bidirectionalUse" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Output1" selection="Output1Unuse">
+<item id="Output1Unuse" input="" vlaue="0"/>
+<item id="Output1Use" input="" vlaue="0"/>
+</option>
+<option enabled="false" id="Opendrain" selection="opendrainUnuse">
+<item id="opendrainUnuse" input="" vlaue="0"/>
+<item id="opendrainUse" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="resistorstatus" selection="resistorUnuse">
+<item id="resistorUnuse" input="" vlaue="0"/>
+<item id="resistorPullup" input="" vlaue="0"/>
+<item id="resistorPulldown" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="inputbuffer" selection="shmt4Item">
+<item id="shmt1Item" input="" vlaue="0"/>
+<item id="shmt4Item" input="" vlaue="0"/>
+</option>
+</allocatable>
+</allocatable>
+<allocatable id="PORT9_Check">
+<option enabled="true" id="PortnEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+<allocatable id="PORT10_Chan"/>
+<allocatable id="PORT10_Check">
+<option enabled="true" id="PortnEnable" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+</allocatable>
+</allocatable>
+<component description="The Ports is function that config each pin to be used as genral input/outpu pin or input/output function of internal IP. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.port" version="1.1.0"/>
+<allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.port.f1kms1s4.port" type="port">
+<context/>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+<configuration id="d24b01fd-bb13-4f24-b9c0-6bee07ef4238" inuse="true" name="Config_TAUJ0_0">
+<allocatable id="TAUJ00">
+<isocket id="IPERI1CountingClock" selection="Clock.tauoutput" value="4.0E7"/>
+<option enabled="true" id="Operation" selection="CK0">
+<item id="CK0" input="" vlaue="0"/>
+<item id="CK1" input="" vlaue="0"/>
+<item id="CK2" input="" vlaue="0"/>
+<item id="CK3" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Prescaler" selection="PCLK32">
+<item id="PCLK1" input="1" vlaue="0"/>
+<item id="PCLK2" input="2" vlaue="0"/>
+<item id="PCLK4" input="4" vlaue="0"/>
+<item id="PCLK8" input="8" vlaue="0"/>
+<item id="PCLK16" input="16" vlaue="0"/>
+<item id="PCLK32" input="32" vlaue="0"/>
+<item id="PCLK64" input="64" vlaue="0"/>
+<item id="PCLK128" input="128" vlaue="0"/>
+<item id="PCLK256" input="256" vlaue="0"/>
+<item id="PCLK512" input="512" vlaue="0"/>
+<item id="PCLK1024" input="1024" vlaue="0"/>
+<item id="PCLK2048" input="2048" vlaue="0"/>
+<item id="PCLK4096" input="4096" vlaue="0"/>
+<item id="PCLK8192" input="8192" vlaue="0"/>
+<item id="PCLK16384" input="16384" vlaue="0"/>
+<item id="PCLK32768" input="32768" vlaue="0"/>
+</option>
+<option enabled="false" id="Bauevalue" selection="Bauevalue">
+<item id="Bauevalue" input="1" vlaue="0"/>
+</option>
+<option enabled="true" id="IntervalValue" selection="IntervalValue">
+<item id="IntervalValue" input="1" vlaue="1249"/>
+</option>
+<option enabled="true" id="IntervalUnit" selection="ms">
+<item id="ms" input="" vlaue="0"/>
+<item id="us" input="" vlaue="0"/>
+<item id="ns" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Generates" selection="Disable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntEnable" selection="Enable">
+<item id="Enable" input="" vlaue="0"/>
+<item id="Disable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="IntPriority" selection="Level15">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+</allocatable>
+<component description="The Interval Timer Function is timer that generating timer interrupt at regular intervals.When an interrupt is generated, resulting in a square wave. " detailDescription="" display="Interval Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.intervaltimer" version="1.1.0"/>
+<allocator channelLevel0="0" channelLevel1="0" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="%tauj_allocator.description00" display="TAUJ0_0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.intervaltimer.f1kms1s4.tauj00" type="TAUJ">
+<context/>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+<configuration id="c8522c74-0802-42e9-ae33-28393f8af836" inuse="true" name="Config_CSIG0">
+<allocatable id="0">
+<isocket id="CSIClock" selection="Clock.csioutput" value="8.0E7"/>
+<option enabled="true" id="handshake" selection="HandshakeDisableItem">
+<item id="HandshakeDisableItem" input="" vlaue="0"/>
+<item id="HandshakeEnableItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="DataConsistency" selection="CheckDisableItem">
+<item id="CheckDisableItem" input="" vlaue="0"/>
+<item id="CheckEnableItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Interruptdelay" selection="NodelayItem">
+<item id="NodelayItem" input="" vlaue="0"/>
+<item id="HalfdelayItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="CommunicationinterruptTime" selection="NormalItem">
+<item id="NormalItem" input="" vlaue="0"/>
+<item id="TransferredtoshiftItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Transferdirection" selection="MsbItem">
+<item id="LsbItem" input="" vlaue="0"/>
+<item id="MsbItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Parity" selection="NoneItem">
+<item id="NoneItem" input="" vlaue="0"/>
+<item id="ZeroItem" input="" vlaue="0"/>
+<item id="EvenItem" input="" vlaue="0"/>
+<item id="OddItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Datalength" selection="8bitsItem">
+<item id="2bitsItem" input="" vlaue="0"/>
+<item id="3bitsItem" input="" vlaue="0"/>
+<item id="4bitsItem" input="" vlaue="0"/>
+<item id="5bitsItem" input="" vlaue="0"/>
+<item id="6bitsItem" input="" vlaue="0"/>
+<item id="7bitsItem" input="" vlaue="0"/>
+<item id="8bitsItem" input="" vlaue="0"/>
+<item id="9bitsItem" input="" vlaue="0"/>
+<item id="10bitsItem" input="" vlaue="0"/>
+<item id="11bitsItem" input="" vlaue="0"/>
+<item id="12bitsItem" input="" vlaue="0"/>
+<item id="13bitsItem" input="" vlaue="0"/>
+<item id="14bitsItem" input="" vlaue="0"/>
+<item id="15bitsItem" input="" vlaue="0"/>
+<item id="16bitsItem" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="phase" selection="Type1Item">
+<item id="Type1Item" input="" vlaue="0"/>
+<item id="Type2Item" input="" vlaue="0"/>
+<item id="Type3Item" input="" vlaue="0"/>
+<item id="Type4Item" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Communicationinterrupt" selection="Level15">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Communicationerrorinterrupt" selection="Level15">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Receptioninterrupt" selection="Level15">
+<item id="Level0" input="" vlaue="0"/>
+<item id="Level1" input="" vlaue="0"/>
+<item id="Level2" input="" vlaue="0"/>
+<item id="Level3" input="" vlaue="0"/>
+<item id="Level4" input="" vlaue="0"/>
+<item id="Level5" input="" vlaue="0"/>
+<item id="Level6" input="" vlaue="0"/>
+<item id="Level7" input="" vlaue="0"/>
+<item id="Level8" input="" vlaue="0"/>
+<item id="Level9" input="" vlaue="0"/>
+<item id="Level10" input="" vlaue="0"/>
+<item id="Level11" input="" vlaue="0"/>
+<item id="Level12" input="" vlaue="0"/>
+<item id="Level13" input="" vlaue="0"/>
+<item id="Level14" input="" vlaue="0"/>
+<item id="Level15" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Transmitcallback" selection="TransmitCallbackEnable">
+<item id="TransmitCallbackDisable" input="" vlaue="0"/>
+<item id="TransmitCallbackEnable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Receivecallback" selection="ReceiveCallbackEnable">
+<item id="ReceiveCallbackDisable" input="" vlaue="0"/>
+<item id="ReceiveCallbackEnable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Errorcallback" selection="ErrorCallbackEnable">
+<item id="ErrorCallbackDisable" input="" vlaue="0"/>
+<item id="ErrorCallbackEnable" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="Mode" selection="both">
+<item id="transmit" input="" vlaue="0"/>
+<item id="receive" input="" vlaue="0"/>
+<item id="both" input="" vlaue="0"/>
+</option>
+<option enabled="true" id="BaudrateValue" selection="BaudrateValue">
+<item id="BaudrateValue" input="9600" vlaue="2083"/>
+<item id="Slection9600" input="9600" vlaue="0"/>
+<item id="Slection19200" input="19200" vlaue="0"/>
+<item id="Slection31250" input="31250" vlaue="0"/>
+<item id="Slection38400" input="38400" vlaue="0"/>
+<item id="Slection76800" input="76800" vlaue="0"/>
+<item id="Slection153600" input="153600" vlaue="0"/>
+<item id="Slection312500" input="312500" vlaue="0"/>
+<item id="Slection1000000" input="1000000" vlaue="0"/>
+</option>
+</allocatable>
+<component description="The Clocked Serial Interface (CSI) is communication function that three-wire serial data transfer(Master mode) with clock synchronous." detailDescription="" display="CSI Master" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.csimaster" version="1.0.2"/>
+<allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="CSIG0" display="CSIG0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.csimastermode.allocator0" type="CSIG">
+<context>
+<option enabled="true" id="Mode" selection="both">
+<item enabled="true" id="transmit"/>
+<item enabled="true" id="receive"/>
+<item enabled="true" id="both"/>
+</option>
+</context>
+</allocator>
+<source description="Code generator components provide peripheral drivers with customized generated source geared towards small code size" display="Code Generator" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+</configuration>
+</tool>
+</smc>
