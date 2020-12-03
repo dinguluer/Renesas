@@ -15,7 +15,7 @@
 * freeRTOS = V10.4.1
 
 # Tutorial:  How to port freeRTOS to Renesas RH850
-- [Youtube Video Tutorial : How to port freeRTOS to Renesas RH850](https://github.com/dinguluer/Renesas)
+- [Youtube Video Tutorial : How to port freeRTOS to Renesas RH850](https://www.youtube.com/watch?v=Wvf05a59v3M)
 
 # How to port freeRTOS to Renesas RH850 : Releases
 * First release – release (1.0.0) : Date - 12-03-2020
