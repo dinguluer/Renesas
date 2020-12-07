@@ -24,7 +24,7 @@ This sample project is porting for freeRTOS on RH850.
 * First release – release 1.0.0  : Date - 12-03-2020
 
 # Licensing
-This porting is released under [MIT]https://opensource.org/licenses/MIT) open source licenses.
+This porting is released under [MIT](https://opensource.org/licenses/MIT) open source licenses.
 MIT licence is free to use & doesn't require modifications be open sourced.
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQoSrP63RCORrRsqBdpHP8vywuqwxtKY1rw&usqp=CAU "License")
