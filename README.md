@@ -25,4 +25,4 @@ This sample project is porting for freeRTOS on RH850.
 
 # Licensing
 This porting is released under MIT open source licenses.
-
+MIT licence is free to use & doesn't require modifications be open sourced.
