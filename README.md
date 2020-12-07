@@ -1,6 +1,6 @@
 # <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o6p4tZT_ORfBAOCJ0DD7CPSyOo3ZToXUVQ&usqp=CAU" width="64" height="64"> Porting freeRTOS on Renesas RH850
 
-![](https://opensource.org/files/OSIApproved_1.png "License")
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQoSrP63RCORrRsqBdpHP8vywuqwxtKY1rw&usqp=CAU "License")
 This sample project is porting for freeRTOS on RH850.
 
 * RH850 : This folder contains the code
