@@ -26,4 +26,5 @@ This sample project is porting for freeRTOS on RH850.
 # Licensing
 This porting is released under MIT open source licenses.
 MIT licence is free to use & doesn't require modifications be open sourced.
+
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQoSrP63RCORrRsqBdpHP8vywuqwxtKY1rw&usqp=CAU "License")
