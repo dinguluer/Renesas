@@ -1,6 +1,4 @@
-# <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o6p4tZT_ORfBAOCJ0DD7CPSyOo3ZToXUVQ&usqp=CAU" width="64" height="64"> Porting freeRTOS on Renesas RH850
-
-# This repository is about Renesas work product :--
+# <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o6p4tZT_ORfBAOCJ0DD7CPSyOo3ZToXUVQ&usqp=CAU" width="64" height="64"> This repository is about Renesas work product
 * 16 bit Microcontroller RL78.
 * 32 bit Microcontroller RH850.
 * Autosar MCAL product of Renesas.
