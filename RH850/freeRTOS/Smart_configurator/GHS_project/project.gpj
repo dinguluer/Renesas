@@ -1,0 +1,29 @@
+#!gbuild
+[Program]
+        -Isrc\smc_gen\Config_OSTM0
+        -Isrc\smc_gen\Config_TAUJ0_0
+        -Isrc\smc_gen\general
+        -Isrc\smc_gen\r_pincfg
+        -object_dir=objs\
+src\smc_gen\Config_OSTM0\Config_OSTM0.c
+src\smc_gen\Config_OSTM0\Config_OSTM0.h
+src\smc_gen\Config_OSTM0\Config_OSTM0_user.c
+src\smc_gen\Config_TAUJ0_0\Config_TAUJ0_0.c
+src\smc_gen\Config_TAUJ0_0\Config_TAUJ0_0.h
+src\smc_gen\Config_TAUJ0_0\Config_TAUJ0_0_user.c
+src\smc_gen\general\r_cg_cgc.c
+src\smc_gen\general\r_cg_cgc.h
+src\smc_gen\general\r_cg_cgc_user.c
+src\smc_gen\general\r_cg_intvector.c
+src\smc_gen\general\r_cg_macrodriver.h
+src\smc_gen\general\r_cg_main.c
+src\smc_gen\general\r_cg_ostm.h
+src\smc_gen\general\r_cg_systeminit.c
+src\smc_gen\general\r_cg_taub.h
+src\smc_gen\general\r_cg_taud.h
+src\smc_gen\general\r_cg_tauj.h
+src\smc_gen\general\r_cg_userdefine.h
+src\smc_gen\general\r_smc_interrupt.c
+src\smc_gen\general\r_smc_interrupt.h
+src\smc_gen\r_pincfg\Pin.c
+src\smc_gen\r_pincfg\Pin.h

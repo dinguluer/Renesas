@@ -1,0 +1,10 @@
+#!gbuild
+primaryTarget=v800_standalone.tgt
+#component top_level_project
+[Project]
+	-G
+	-object_dir=objs
+	:sourceDir=.
+	-bsp generic
+	-cpu=rh850g3kh
+project.gpj [Program]
